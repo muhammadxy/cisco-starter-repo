@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import data from '../common/data';
 import SingleQuestion from '../common/Question';
+import Features from './Features';
 function Accord() {
   const [questions, setQuestions] = useState(data);
   return (
+
     <main>
+
       <div className='container'>
-        <h3>questions and answers about login</h3>
+      
+      
         <section className='info'>
           {questions.map((question) => {
             return (

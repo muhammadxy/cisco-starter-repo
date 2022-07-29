@@ -1,5 +1,5 @@
 import React from 'react'
-import { Features, Navbars } from '../../components'
+import { Accord, Features, Ip, Navbars } from '../../components'
 import Header from '../../components/common/Header'
 import Footer from '../../components/common/Footer'
 const Home = () => {
@@ -9,6 +9,8 @@ const Home = () => {
     <Navbars/>
     <Header/>
     <Features/>
+    <Ip/>
+    <Accord/>
     <Footer/>
     
     </div>

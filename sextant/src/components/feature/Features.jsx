@@ -1,22 +1,17 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Accord from './Accordion';
-import Carousel from 'react-bootstrap/Carousel';
-const Features = () => {
-  return (
-<>
- <div>
-  
-    <Accord/>
-  </div>
-<div>
-</div>
+import React from "react";
+import { Component } from "react";
+import "./Features.css"
 
-
-</>    
- 
-  )
+class Features extends Component {
+  render() {
+    return (
+        <div className="Exhibit">
+            <h2 className="FeaturesHeading">{this.props.name}</h2>
+            <div className="FeaturesContent">
+                {this.props.children}
+            </div>
+        </div>
+    );
 }
-
-export default Features
+}
+export default Features;
